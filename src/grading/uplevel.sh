@@ -7,7 +7,7 @@ for f in $(find */ -name $NAME) ; do
 	# SRCDIR is the subdirectory actually containing student work
 	# find it by getting the all content up to the last 
 	# trailing slash.
-	# Reminder, () delimits a search group
+	# Reminder, () delimits a capture group
 	SRCDIR=$(echo $f | sed 's/\(^.*\/\).*/\1/')
 
 	# TOPDIR is the top directory in the heirarchy
